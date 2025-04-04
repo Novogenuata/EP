@@ -20,18 +20,17 @@
       --hue: 0;
       --scale: 1;
       font-family: Arial, sans-serif;
-      background-color: hsl(var(--hue), 100%, 98%);
-      color: #000;
+      background-color: hsl(var(--hue), 50%, 98%);
+      color: #111;
       line-height: 1.6;
       transition: all 0.3s ease;
       transform: rotate(var(--rotate)) scale(var(--scale));
     }
 
     header {
-      background-color: #f1f1f1;
+      background-color: #f4f4f4;
       padding: 20px 0;
-      border-bottom: 1px solid #ddd;
-      transition: background 0.3s ease;
+      border-bottom: 1px solid #ccc;
     }
 
     nav {
@@ -43,82 +42,54 @@
     }
 
     nav h1 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: #333;
-      transition: transform 0.3s ease;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #000;
-      font-weight: normal;
     }
 
     main {
       max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
-      font-family: var(--font, Arial), sans-serif;
+      transition: font-family 0.3s ease;
     }
 
     section {
       margin-bottom: 60px;
-      transform: rotate(var(--rotate));
-      transition: all 0.3s ease;
+      transition: transform 0.4s ease;
     }
 
     h2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       color: #222;
       margin-bottom: 10px;
+      transition: letter-spacing 0.3s ease, transform 0.3s ease;
     }
 
     p {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+      transition: letter-spacing 0.3s ease, transform 0.3s ease;
     }
 
-    .chaos-goat {
-      display: none;
-      font-size: 2rem;
-      margin-top: 20px;
-      text-align: center;
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f9f9f9;
-      border-top: 1px solid #ddd;
+      background-color: #eee;
+      border-top: 1px solid #ccc;
       font-size: 0.875rem;
       color: #666;
-      transform: rotate(var(--rotate));
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      background-color: #e0e0e0;
-      border: 1px solid #ccc;
-      color: #000;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #ccc;
-      transform: scale(1.05);
     }
 
     @keyframes shake {
-  0% { transform: translate(0px, 0px) rotate(var(--rotate)); }
-  100% { transform: translate(2px, -2px) rotate(var(--rotate)); }
-}
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(1px, -1px); }
+    }
   </style>
 </head>
 <body>
@@ -126,155 +97,248 @@
   <header>
     <nav>
       <h1>Postmodernism</h1>
-
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Welcome</h2>
-      <p>Want to learn about postmodernism? This is the website for you! Scroll down to see some postmodernist art and definitions!</p>
+      <p>Want to learn about postmodernism? You're in the right place. Scroll down to see some definitions and postmodernist art!</p>
+    </section>
+
+    <section>
+      <h2>Postmodernism in Art</h2>
+      <img src="Images/230306_r41946.jpg" alt="Postmodern Art">
+      <p>Postmodern art challenges structure, meaning, and sometimes your sense of visual safety. It's chaotic, self-aware, and deeply ironic—kind of like this website.</p>
+    </section>
+
+    <section>
+      <h2>Postmodernism in Video Games</h2>
+      <p>From breaking the fourth wall to questioning your role as the player, postmodernism has made its mark in digital spaces. Games that deconstruct their mechanics or narrative are part of this evolving movement.</p>
     </section>
 
 
-
     <section>
-        <section>
-            <h2>Placeholder</h2>
-            <img src="https://th.bing.com/th/id/OIP.LsSx6kxsbQWlMRJ8S15lkQHaE8?rs=1&pid=ImgDetMain" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>      <section>
-            <h2>Placeholder</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit officia tenetur fuga, tempore sapiente cupiditate distinctio ad ipsam unde, perspiciatis odio aperiam voluptates vitae magnam recusandae animi totam a.</p>
-          </section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>
+    <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>
+    <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>  <section>
+      <h2>placeholder</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque eos quaerat quod fugiat nemo maxime non dolores.</p>
+    </section>
+    
   </main>
 
   <footer>
-    &copy; 2025 Postmodern Chaos. All rights reserved.
+    Are you really on a website?
   </footer>
 
   <script>
     const body = document.body;
     const sections = document.querySelectorAll("section");
-  
+    const textElements = document.querySelectorAll("h2, p");
+
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
-      const hue = (scrollY / 5) % 360;
-      const rotate = (scrollY / 100) % 2 - 1;
-      const scale = 1 + Math.sin(scrollY / 300) * 0.1;
-      const font = scrollY > 800 ? "'Comic Sans MS', cursive" : "Arial";
   
-      document.body.style.setProperty("--hue", hue);
-      document.body.style.setProperty("--rotate", `${rotate}deg`);
-      document.body.style.setProperty("--scale", scale);
-      document.body.style.setProperty("--font", font);
+      // Milestone-based effects:
+      const hue = scrollY > 3000 ? ((scrollY - 3000) / 10) % 360 : 0;
   
-     
-      if (scrollY > 1000) {
-        body.style.filter = "invert(1) hue-rotate(180deg)";
-      } else {
-        body.style.filter = "none";
-      }
-  
-      if (scrollY > 2000) {
-        body.style.letterSpacing = `${(scrollY % 10) - 5}px`;
-      } else {
-        body.style.letterSpacing = "normal";
-      }
-  
-      if (scrollY > 3000) {
-        body.style.animation = "shake 0.1s infinite alternate";
+
+      const rotate = scrollY > 3500 ? Math.sin((scrollY - 3500) / 500) * 1.5 : 0;
+      const scale = scrollY > 3500 ? 1 + Math.sin((scrollY - 3500) / 600) * 0.03 : 1;
+
+      const font = scrollY > 4500 ? "'Comic Sans MS', cursive" : "Arial";
+
+      if (scrollY > 7000) {
+        body.style.animation = "shake 0.2s infinite alternate";
       } else {
         body.style.animation = "none";
       }
   
-      // Rotate sections individually
-      sections.forEach((section, index) => {
+     
+      body.style.setProperty("--hue", hue);
+      body.style.setProperty("--rotate", `${rotate}deg`);
+      body.style.setProperty("--scale", scale);
+      body.style.setProperty("--font", font);
+  
+    
+      sections.forEach((section) => {
         const offset = scrollY - section.offsetTop;
-        if (offset > 0 && offset < window.innerHeight) {
-          const skew = Math.sin(offset / 100) * 5;
+        if (offset > -300 && offset < window.innerHeight) {
+          const skew = Math.sin(offset / 150) * 3;
           section.style.transform = `rotate(${rotate}deg) skew(${skew}deg)`;
+        } else {
+          section.style.transform = "none";
+        }
+      });
+  
+    
+      textElements.forEach((el) => {
+        if (scrollY > 6000) {
+       
+          const spacing = Math.min((scrollY - 6000) / 10, 3);
+          el.style.letterSpacing = spacing + "px";
+
+          const rotateX = Math.min((scrollY - 6000) / 500, 15);
+          el.style.transform = `perspective(600px) rotateX(${rotateX}deg)`;
+        } else {
+          el.style.letterSpacing = "normal";
+          el.style.transform = "none";
         }
       });
     });
