@@ -189,15 +189,32 @@
       <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
       <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
       <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
-      <section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section><section><h2>Placeholder</h2><p>Lorem ipsum dolor sit amet...</p></section>
+      <section><h2>💧︎□︎❍︎♏︎⧫︎♒︎♓︎■︎♑︎ ⬧︎♏︎♏︎❍︎⬧︎ ■︎□︎■︎📫︎●︎♓︎■︎♏︎♋︎❒︎</h2><p>🕈︎♏︎ ⬥︎♓︎●︎●︎ ♎︎♏︎♍︎□︎■︎⬧︎⧫︎❒︎◆︎♍︎⧫︎ ⧫︎♒︎♏︎ ♑︎❒︎♋︎■︎♎︎ ■︎♋︎❒︎❒︎♋︎⧫︎♓︎❖︎♏︎</p></section>
+      <section><h2>Are you part of a Grand Narrative?</h2><p>Scientists might say yes?</p></section>
+      <section>
+        <h2>Nothing is real.</h2>
+        <pre><code>
+      const content = document.querySelector('.content');
+      const sections = document.querySelectorAll("section");
+      const textElements = document.querySelectorAll("h2, p");
+      
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        content.style.opacity = Math.max(1 - scrollY / 5000, 0);
+      
+        const hue = scrollY > 3000 ? ((scrollY - 3000) / 10) % 360 : 0;
+        const rotate = scrollY > 3500 ? Math.sin((scrollY - 3500) / 500) * 1.5 : 0;
+        const scale = scrollY > 3500 ? 1 + Math.sin((scrollY - 3500) / 600) * 0.03 : 1;
+      
+       
+        textElements.forEach(element => {
+          element.style.transform = `rotate(${rotate}deg) scale(${scale})`;
+          element.style.filter = `hue-rotate(${hue}deg)`;
+        });
+      });
+        </code></pre>
+      </section>
+     
 
 
 
